@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-commerce Product Page</title>
+  <style>
+    /* Basic Reset */
+    body, h1, p, button {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Styles */
+    header {
+      background-color: #f8f8f8;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    .product-details {
+      width: 40%;
+      text-align: left;
+    }
+
+    .product-images {
+      width: 50%;
+    }
+
+    .product-images img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #f8f8f8;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Awesome E-commerce</h1>
+    <!-- Navigation bar, logo, etc. -->
+  </header>
+
+  <main>
+    <div class="product-details">
+      <h1>Product Title</h1>
+      <p class="description">Welcome to our world of extraordinary discoveries at Awesome E-commerce! We curate a diverse collection of innovative products that enrich your lifestyle. Explore our handpicked selection, meticulously chosen to inspire and elevate everyday experiences. From cutting-edge tech gadgets to timeless fashion essentials, each item embodies quality, creativity, and functionality. Join us on a journey where every click unveils a new dimension of awe-inspiring possibilities. Embrace the extraordinary with Awesome E-commerce."</p>
+      <p class="price">$75.00S</p>
+      <button id="add-to-cart">Add to Cart</button>
+    </div>
+    
+    <div class="product-images">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgHYOIjf1fm_emsmttaMd-Duxkuu_o7Fj_tg&usqp=CAU" alt="Product Image 1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR81c03zvClMuq1zwHoSd0KpWepRr28WrXKbA&usqp=CAU" alt="Product Image 2">
+      <!-- Replace the image URLs with your actual product images -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Awesome E-commerce. All rights reserved.</p>
+    <!-- Footer content -->
+  </footer>
+
+  <script>
+    const addToCartBtn = document.getElementById('add-to-cart');
+
+    addToCartBtn.addEventListener('click', function() {
+      alert('Product added to cart!');
+      // Additional logic to update the cart
+    });
+  </script>
+</body>
+</html>
